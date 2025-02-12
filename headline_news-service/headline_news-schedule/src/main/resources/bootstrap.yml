@@ -1,0 +1,12 @@
+server:
+  port: ${server.port:51701}
+spring:
+  application:
+    name: headline_news-schedule
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
